@@ -10,13 +10,6 @@ RUN apt-get update && apt-get install -y nano && apt-get clean
 # ✅ Copy config เข้า /etc
 COPY ./config/odoo.conf /etc/odoo.conf
 
-# ตั้ง ENV สำหรับป้องกันการ override จาก Railway
-ENV DB_HOST=postgres.railway.internal \
-    DB_PORT=5432 \
-    DB_USER=postgres \
-    DB_PASSWORD= XlwrnuGjbWMHUbLcqnAiyYmEkSRfZxzM \
-USER odoo
-
 EXPOSE 8080
 
 # Debug: แสดง config ก่อนรัน
