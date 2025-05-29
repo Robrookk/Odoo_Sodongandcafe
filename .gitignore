@@ -1,5 +1,47 @@
+# Python
 *.pyc
+*.pyo
 __pycache__/
+
+# Logs
 *.log
-.odoo
-db_data/
+
+# Odoo files
+*.db
+*.db.*
+*.sql
+*.zip
+
+# Docker
+*.env
+.env
+*.bak
+docker-compose.override.yml
+docker-compose.yml
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Data & backup
+*.tar
+*.tar.gz
+*.dump
+
+# Odoo Custom
+local_addons/
+custom_addons/
+
+# Ignore Odoo auto-generated files
+*.xlsx
+*.pdf
+*.png
+*.jpg
